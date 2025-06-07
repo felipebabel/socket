@@ -1,4 +1,4 @@
-# WebSocket Server
+# 📡 WebSocket Server
 
 A simple WebSocket server implemented in Java using the `java-websocket` library. This server handles multiple client connections, receives messages, and responds to them.
 
@@ -6,37 +6,58 @@ A simple WebSocket server implemented in Java using the `java-websocket` library
 - Accepts multiple WebSocket connections.
 - Logs new connections and disconnections.
 - Receives and echoes messages back to the sender.
-
+---
 ## 🛠️ Requirements
-- Java 23
 
+Java 23
+
+---
 ## 📦 Installation
 
-- Clone this repository:
+Clone this repository:
 ```bash
 git clone https://github.com/felipebabel/socket.git
 ```
-## Running
-- Build the project:
+---
+## 🚀 Running the Server
+
+Build the project:
 ```bash
     mvn clean install  
 ```
-- Run the WebSocket server:
+Run the WebSocket server:
 ```bash 
-  mvn exec:java -Dexec.mainClass="socket.socket.config.Server"
+mvn exec:java -Dexec.mainClass="socket.config.Server"
 ```
 
-🛠️ Testing with Simple WebSocket Client
+By default, the server runs on:
+```arduino 
+ws://localhost:8080
+```
+
+## 🧪 Testing the Server
+
+You can use the Simple WebSocket Client Chrome extension:
 
 - Install [Simple WebSocket Client](https://chromewebstore.google.com/detail/simple-websocket-client/pfdhoblngboilpfeibdedpjgfnlcodoo).
-- Open the extension and enter ws://localhost:8080.
-- Click Open to connect.
-- Send a message and check the server logs.
+- Open the extension and enter the WebSocket URL://localhost:8080.
+- Click `Open` to connect.
+- Type a message and check the server logs.
 
-Simple WebSocket Client:
+---
+## 🔄 Testing Multiple Clients
+To test multiple clients at once:
 
-![img.png](img.png)
+- Open the WebSocket client extension in two different browser tabs (or windows)
+- Connect both to ws://localhost:8080
+- Send a message from one tab and watch how only that tab receives an echo (the server echoes back to the sender only)
+- The server logs each connection and disconnection separately
+---
 
-Terminal: 
+## 🎥 Demo
 
-![img_2.png](assets/img_2.png)
+Here’s a quick demonstration of the WebSocket server in action:
+
+
+
+![WebSocket Demo](assets/gif/websocket.gif)****
