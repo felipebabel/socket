@@ -60,4 +60,4 @@ Here’s a quick demonstration of the WebSocket server in action:
 
 
 
-![WebSocket Demo](assets/gif/websocket.gif)****
+![WebSocket Demo](assets/gif/websocket.gif)
